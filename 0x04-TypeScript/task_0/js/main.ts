@@ -1,25 +1,25 @@
 interface Student {
-  firstName: string,
-  lastName: string,
-  age: Number,
-  location: string
+  firstName: string;
+  lastName: string;
+  age: number;
+  location: string;
 }
 
-const student1: Student = {
-  firstName: "Kalkidan",
-  lastName: "Demes",
+const studentOne: Student = {
+  firstName: "Nii",
+  lastName: "Ayitey",
   age: 25,
-  location: "Ethiopia"
+  location: "Ghana"
 }
 
-const student2: Student = {
-  firstName: "Tester",
-  lastName: "unknown",
-  age: 30,
-  location: "Kenya"
+const studentTwo: Student = {
+  firstName: "King",
+  lastName: "Loco",
+  age: 29,
+  location: "Ghana"
 }
 
-const studentsList: Array<Student> = [ student1, student2 ];
+const studentsList: Array<Student> = [ studentOne, studentTwo ];
 
 const body: HTMLBodyElement = document.getElementsByTagName("body")[0];
 const table: HTMLTableElement = document.createElement("table");
