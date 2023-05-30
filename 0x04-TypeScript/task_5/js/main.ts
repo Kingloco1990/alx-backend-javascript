@@ -1,26 +1,17 @@
-interface  MajorCredits{
-credits: number;
-}
-
-interface  MinorCredits{
-credits: number;
-}
-
-interface Major extends MajorCredits{
+export interface MajorCredits {
   credits: number;
+  majorCreditBrand: void;
 }
 
-interface Minor extends MinorCredits{
+export interface MinorCredits {
   credits: number;
+  minoCreditBrand: void;
 }
 
-function sumMajorCredits(subject1: Major, subject2: Major): Major {
-  return {
-    credits: subject1.credits + subject2.credits
-  }
+const sumMajorCredits = (subject1: MajorCredits, subject2: MajorCredits): MajorCredits => {
+  return {credits: subject1.credits + subject2.credits} as MajorCredits;
 }
- function sumMinorCredits(subject1: Minor, subject2: Minor): Minor {
-  return {
-    credits: subject1.credits + subject2.credits
-  }
+
+const sumMinorCredits = (subject1: MinorCredits, subject2: MinorCredits): MinorCredits => {
+  return {credits: subject1.credits + subject2.credits} as MinorCredits;
 }
