@@ -1,1 +1,1 @@
-README file for the alx-backend-javascript repo
+README file for the 0x06. Unittests in JS project
